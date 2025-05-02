@@ -1,16 +1,20 @@
 const juices = [
-    { name: "Tropical Delight", ingredients: "Mango, Pineapple, Coconut Water" },
-    { name: "Green Machine", ingredients: "Kale, Spinach, Green Apple, Lemon" },
-    { name: "Berry Blast", ingredients: "Strawberry, Blueberry, Raspberry" },
-    { name: "Citrus Refresh", ingredients: "Orange, Grapefruit, Lime" },
-    { name: "Carrot Kick", ingredients: "Carrot, Ginger, Orange" }
-];
-
-const juiceList = document.getElementById('juice-list');
-
-// Dynamically add juice items to the menu
-juices.forEach(juice => {
-    const listItem = document.createElement('li');
-    listItem.innerHTML = `<strong>${juice.name}</strong><br><em>${juice.ingredients}</em>`;
-    juiceList.appendChild(listItem);
-});
+    { name: "Mango Mania", price: "$4.99", description: "Mango, yogurt, honey" },
+    { name: "Berry Blast", price: "$5.49", description: "Strawberries, blueberries, banana" },
+    { name: "Green Glow", price: "$4.79", description: "Spinach, apple, cucumber, lemon" },
+    { name: "Citrus Zing", price: "$4.59", description: "Orange, lemon, ginger" }
+  ];
+  
+  const menu = document.getElementById("menu");
+  
+  juices.forEach(juice => {
+    const item = document.createElement("div");
+    item.className = "menu-item";
+    item.innerHTML = `
+      <h3>${juice.name}</h3>
+      <p><strong>${juice.price}</strong></p>
+      <p>${juice.description}</p>
+    `;
+    menu.appendChild(item);
+  });
+  
