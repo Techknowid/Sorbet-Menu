@@ -2,17 +2,134 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sorbet - Juice Bar Menu</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SORBAE Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+    }
+    h1, h2, h3 {
+      color: #d4c145;
+    }
+    .logo img {
+      width: 150px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <h1>🍊 Sorbet 🍓</h1>
-    <h2>Fresh Juice Menu</h2>
-    <div id="menu" class="menu"></div>
-  </div>
+  <div class="container py-5">
+    <div class="text-center logo mb-4">
+      <img src="/images/sorbae.png" alt="SORBAE Logo" class="img-fluid">
+    </div>
+    <h1 class="text-center mb-5">SORBAE - Fueling Flavour</h1>
+    <div class="text-center mb-5">
+      <a href="https://g.page/r/CdGyGxg8mD0cEAI/review" target="_blank" class="btn btn-warning me-3">
+        <i class="fab fa-google"></i> Google Review
+      </a>
+      <a href="https://www.instagram.com/sorbaeofficial/" target="_blank" class="btn btn-info me-3">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://wa.me/919876543210" target="_blank" class="btn btn-success">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
 
-  <script src="script.js"></script>
+    <div class="menu-section mb-5">
+      <h2>KARIKKU SHAKE</h2>
+      <ul class="list-unstyled">
+        <li>Normal Shake - ₹80</li>
+        <li>Karikku Mango - ₹90</li>
+        <li>Karikku Cocktail - ₹100</li>
+        <li>Karikku Dates - ₹100</li>
+        <li>Karikku Grape - ₹90</li>
+        <li>Karikku Guava - ₹90</li>
+        <li>Karikku Muskmelon - ₹90</li>
+        <li>Karikku Fruits Mix - ₹110</li>
+        <li>Karikku Avocado - ₹120</li>
+        <li>Karikku Strawberry - ₹100</li>
+        <li>Karikku Oreo - ₹100</li>
+        <li>Karikku Chocolate - ₹90</li>
+        <li>Karikku Boost - ₹90</li>
+        <li>Karikku Horlicks - ₹90</li>
+        <li>Karikku Snickers - ₹120</li>
+        <li>Karikku Diary Milk - ₹110</li>
+        <li>Karikku Dry Fruits - ₹120</li>
+        <li>Karikku Honey & Nuts - ₹120</li>
+        <li>Karikku Badam - ₹100</li>
+        <li>Karikku Blackcurrant - ₹100</li>
+        <li>Karikku Blueberry - ₹110</li>
+      </ul>
+      <h3>Our Special</h3>
+      <ul class="list-unstyled">
+        <li>Mundhirippalu - ₹130</li>
+      </ul>
+    </div>
+
+    <div class="menu-section mb-5">
+      <h2>Fresh Juice</h2>
+      <ul class="list-unstyled">
+        <li>Lemon Juice - ₹40</li>
+        <li>Mint Lime - ₹50</li>
+        <li>Grape Lime - ₹60</li>
+        <li>Pineapple Lime - ₹60</li>
+        <li>Ginger Lime - ₹50</li>
+        <li>Musambi - ₹50</li>
+        <li>Apple - ₹60</li>
+        <li>Pineapple - ₹60</li>
+        <li>Grape - ₹60</li>
+        <li>Orange - ₹60</li>
+        <li>Papaya - ₹50</li>
+        <li>Watermelon - ₹50</li>
+      </ul>
+    </div>
+
+    <div class="menu-section mb-5">
+      <h2>Mojito</h2>
+      <ul class="list-unstyled">
+        <li>Strawberry - ₹70</li>
+        <li>Watermelon - ₹70</li>
+        <li>Blueberry - ₹80</li>
+        <li>Blackberry - ₹80</li>
+        <li>Blue Curacao - ₹80</li>
+        <li>Mint - ₹60</li>
+        <li>Passion Fruit - ₹80</li>
+        <li>Green Apple Virgin - ₹80</li>
+        <li>Orange - ₹70</li>
+        <li>Spicy Orange - ₹75</li>
+        <li>Spicy Mango - ₹75</li>
+      </ul>
+    </div>
+
+    <div class="menu-section mb-5">
+      <h2>Soda</h2>
+      <ul class="list-unstyled">
+        <li>Lemon Soda - ₹30</li>
+        <li>Mint Lime Soda - ₹40</li>
+        <li>Grape Soda - ₹40</li>
+        <li>Pineapple Lime Soda - ₹40</li>
+        <li>Chilly Soda - ₹30</li>
+        <li>Orange Soda - ₹40</li>
+      </ul>
+    </div>
+
+    <div class="menu-section mb-5">
+      <h2>Falooda</h2>
+      <ul class="list-unstyled">
+        <li>Normal - ₹100</li>
+        <li>Royal - ₹120</li>
+        <li>Nuts - ₹130</li>
+        <li>Mango - ₹110</li>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
