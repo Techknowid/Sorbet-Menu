@@ -15,7 +15,7 @@
     }
     .logo img {
       width: 150px;
-      max-width: 80vw; /* Responsive logo */
+      max-width: 80vw;
       height: auto;
     }
     ul {
@@ -24,14 +24,12 @@
     li {
       margin-bottom: 5px;
     }
-    /* Responsive section padding */
     .menu-section {
       padding: 1.5rem 1rem;
       border-radius: 1rem;
       background: rgba(0,255,0,0.1);
       margin-bottom: 2rem;
     }
-    /* Responsive button spacing */
     .menu-actions .btn {
       width: 100%;
       margin-bottom: 0.7rem;
@@ -41,6 +39,25 @@
         width: auto;
         margin-bottom: 0;
       }
+    }
+    .item-title {
+      font-weight: 600;
+      color: #00008B;
+    }
+    .item-desc {
+      font-size: 0.97em;
+      color: #444;
+      margin-left: 10px;
+      display: block;
+    }
+    .item-price {
+      float: right;
+      color: #d4c145;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+    .list-unstyled {
+      margin-bottom: 0;
     }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -52,11 +69,6 @@
         <img src="images/sorbae.png" alt="SORBAE Logo" class="img-fluid">
       </div>
     </div>
-<!--     <div class="row justify-content-center mb-4">
-      <div class="col-12">
-        <h1 class="text-center mb-4">SORBAE - Fueling Flavour</h1>
-      </div>
-    </div> -->
     <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-8 d-flex flex-column flex-md-row justify-content-center align-items-center menu-actions">
         <a href="https://maps.app.goo.gl/djbLVChwFwnqjRa58" target="_blank" class="btn btn-warning me-md-3 mb-2 mb-md-0">
@@ -76,90 +88,382 @@
         <div class="menu-section">
           <h2>KARIKKU SHAKE</h2>
           <ul class="list-unstyled">
-            <li>Normal Shake - ₹80</li>
-            <li>Karikku Mango - ₹90</li>
-            <li>Karikku Cocktail - ₹100</li>
-            <li>Karikku Dates - ₹100</li>
-            <li>Karikku Grape - ₹90</li>
-            <li>Karikku Guava - ₹90</li>
-            <li>Karikku Muskmelon - ₹90</li>
-            <li>Karikku Fruits Mix - ₹110</li>
-            <li>Karikku Avocado - ₹120</li>
-            <li>Karikku Strawberry - ₹100</li>
-            <li>Karikku Oreo - ₹100</li>
-            <li>Karikku Chocolate - ₹90</li>
-            <li>Karikku Boost - ₹90</li>
-            <li>Karikku Horlicks - ₹90</li>
-            <li>Karikku Snickers - ₹120</li>
-            <li>Karikku Diary Milk - ₹110</li>
-            <li>Karikku Dry Fruits - ₹120</li>
-            <li>Karikku Honey & Nuts - ₹120</li>
-            <li>Karikku Badam - ₹100</li>
-            <li>Karikku Blackcurrant - ₹100</li>
-            <li>Karikku Blueberry - ₹110</li>
+            <li>
+              <span class="item-title">Normal Shake</span>
+              <span class="item-price">₹79</span>
+              <span class="item-desc">Classic karikku (tender coconut) shake with fresh pulp and milk, lightly sweetened.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Mango</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Tender coconut blended with sweet ripe mango for a tropical delight.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Cocktail</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">A fusion of karikku with mixed seasonal fruits for a refreshing twist.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Dates</span>
+              <span class="item-price">₹99</span>
+              <span class="item-desc">Tender coconut shake enriched with soft dates, offering a natural sweetness.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Grape</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Chilled karikku blended with juicy grapes for a unique fruity flavor.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Muskmelon</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Tender coconut and muskmelon—the perfect summer blend for cooling off.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Fruits Mix</span>
+              <span class="item-price">₹99</span>
+              <span class="item-desc">A luxurious mix of karikku, milk, and assorted fresh fruits.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Avocado</span>
+              <span class="item-price">₹109</span>
+              <span class="item-desc">Creamy avocado blended with karikku for a rich, nutritious shake.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Strawberry</span>
+              <span class="item-price">₹99</span>
+              <span class="item-desc">Tender coconut and strawberry combine for a sweet, slightly tart treat.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Oreo</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Karikku shake with crushed Oreo cookies, a kids’ favorite!</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Chocolate</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Classic karikku shake with a rich chocolatey twist.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Boost</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">A blend of karikku and Boost for a malted, energizing drink.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Horlicks</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Karikku with Horlicks, a comforting and nutritious combination.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Snickers</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Tender coconut shake blended with Snickers bar for a nutty, chocolaty delight.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Diary Milk</span>
+              <span class="item-price">₹89</span>
+              <span class="item-desc">Karikku shake fused with Dairy Milk chocolate, creamy and sweet.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Dry Fruits</span>
+              <span class="item-price">₹119</span>
+              <span class="item-desc">Karikku shake loaded with assorted dry fruits for extra crunch and flavor.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Honey & Nuts</span>
+              <span class="item-price">₹119</span>
+              <span class="item-desc">A nourishing blend of karikku with honey and a mix of nuts.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Badam</span>
+              <span class="item-price">₹99</span>
+              <span class="item-desc">Karikku shake with almond paste for a nutty, rich beverage.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Blackcurrant</span>
+              <span class="item-price">₹120</span>
+              <span class="item-desc">Exotic blackcurrant flavors blended into the classic karikku shake.</span>
+            </li>
+            <li>
+              <span class="item-title">Karikku Blueberry</span>
+              <span class="item-price">₹120</span>
+              <span class="item-desc">Tender coconut and blueberry—fruity, tangy and refreshing.</span>
+            </li>
           </ul>
           <h3>Our Special</h3>
           <ul class="list-unstyled">
-            <li>Mundhirippalu - ₹130</li>
+            <li>
+              <span class="item-title">Mundhirippalu</span>
+              <span class="item-price">₹99</span>
+              <span class="item-desc">A premium shake featuring grape, milk and cashew nuts with a special in-house twist.</span>
+            </li>
           </ul>
         </div>
-
+        <div class="menu-section">
+          <h2>Kulukki</h2>
+          <p style="color:#444;margin-bottom:10px;">
+            Kerala's famous shaken mocktail—refreshingly zesty, sweet, and spicy with a twist in every glass!
+          </p>
+          <ul class="list-unstyled">
+            <li>
+              <span class="item-title">Mango</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Shaken drink with ripe mango, lemon, and a dash of spice for tropical refreshment.</span>
+            </li>
+            <li>
+              <span class="item-title">Orange</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Tangy orange blended with lemon, mint, and a hint of green chili for a fizzy punch.</span>
+            </li>
+            <li>
+              <span class="item-title">Grape</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Juicy grapes muddled with lemon and a touch of spice, served ice-cold.</span>
+            </li>
+            <li>
+              <span class="item-title">Strawberry</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Fresh strawberries, lemon and a pinch of chili shaken for a sweet-spicy sip.</span>
+            </li>
+            <li>
+              <span class="item-title">Butterscotch</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Classic kulukki with a butterscotch twist—sweet, creamy, and uniquely delicious.</span>
+            </li>
+            <li>
+              <span class="item-title">Pista</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">A nutty take on kulukki—pistachio flavor shaken with lemon and mint.</span>
+            </li>
+            <li>
+              <span class="item-title">Watermelon</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Watermelon chunks with lemon, mint, and a hint of green chili, shaken over ice.</span>
+            </li>
+            <li>
+              <span class="item-title">Nellikka Kanthari</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Gooseberry and bird’s eye chili for a tangy and spicy Kerala specialty.</span>
+            </li>
+            <li>
+              <span class="item-title">Pineapple</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Pineapple, lemon, and mint, shaken to perfection for a tropical taste.</span>
+            </li>
+            <li>
+              <span class="item-title">Passion Fruit</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Zesty passion fruit with lemon, mint, and a subtle dash of spice.</span>
+            </li>
+            <li>
+              <span class="item-title">Black Berry</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Blackberry pulp shaken with lemon and a hint of green chili for a vibrant blend.</span>
+            </li>
+            <li>
+              <span class="item-title">Green Apple</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Green apple, lemon, and mint, shaken for a crisp and tangy flavor.</span>
+            </li>
+            <li>
+              <span class="item-title">Kiwi</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Exotic kiwi fruit with lemon and chili, delivering a sweet and spicy kick.</span>
+            </li>
+            <li>
+              <span class="item-title">Litchi</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Litchi, lemon, and mint, shaken for a subtly sweet and refreshing drink.</span>
+            </li>
+            <li>
+              <span class="item-title">Guava</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Guava, lemon, mint, and a dash of spice create this tangy pink classic.</span>
+            </li>
+            <li>
+              <span class="item-title">Boost</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Boost energy drink meets kulukki—malty, chocolatey, and revitalizing.</span>
+            </li>
+            <li>
+              <span class="item-title">Horlicks</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">A wholesome twist—Horlicks blended with lemon and kulukki spices.</span>
+            </li>
+          </ul>
+        </div>
         <div class="menu-section">
           <h2>Fresh Juice</h2>
           <ul class="list-unstyled">
-            <li>Lemon Juice - ₹40</li>
-            <li>Mint Lime - ₹50</li>
-            <li>Grape Lime - ₹60</li>
-            <li>Pineapple Lime - ₹60</li>
-            <li>Ginger Lime - ₹50</li>
-            <li>Musambi - ₹50</li>
-            <li>Apple - ₹60</li>
-            <li>Pineapple - ₹60</li>
-            <li>Grape - ₹60</li>
-            <li>Orange - ₹60</li>
-            <li>Papaya - ₹50</li>
-            <li>Watermelon - ₹50</li>
+            <li>
+              <span class="item-title">Lemon Juice</span>
+              <span class="item-price">₹24</span>
+              <span class="item-desc">Freshly squeezed lemon juice, lightly sweetened and chilled.</span>
+            </li>
+            <li>
+              <span class="item-title">Mint Lime</span>
+              <span class="item-price">₹24</span>
+              <span class="item-desc">A zesty blend of lemon juice and fresh mint leaves.</span>
+            </li>
+            <li>
+              <span class="item-title">Grape Lime</span>
+              <span class="item-price">₹24</span>
+              <span class="item-desc">Grape juice with a hint of lime for a tangy, sweet taste.</span>
+            </li>
+            <li>
+              <span class="item-title">Pineapple Lime</span>
+              <span class="item-price">₹24</span>
+              <span class="item-desc">Juicy pineapple with tangy lime—refreshing and tropical.</span>
+            </li>
+            <li>
+              <span class="item-title">Apple</span>
+              <span class="item-price">₹59</span>
+              <span class="item-desc">Chilled, freshly pressed apple juice.</span>
+            </li>
+            <li>
+              <span class="item-title">Pineapple</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Juicy, sweet, and tangy pineapple juice, served fresh.</span>
+            </li>
+            <li>
+              <span class="item-title">Grape</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Fresh grape juice—naturally sweet and refreshing.</span>
+            </li>
+            <li>
+              <span class="item-title">Orange</span>
+              <span class="item-price">₹79</span>
+              <span class="item-desc">Classic freshly squeezed orange juice.</span>
+            </li>
+            <li>
+              <span class="item-title">Watermelon</span>
+              <span class="item-price">₹49</span>
+              <span class="item-desc">Chilled watermelon juice for instant refreshment.</span>
+            </li>
           </ul>
         </div>
 
-        <div class="menu-section">
+       <!--  <div class="menu-section">
           <h2>Mojito</h2>
           <ul class="list-unstyled">
-            <li>Strawberry - ₹70</li>
-            <li>Watermelon - ₹70</li>
-            <li>Blueberry - ₹80</li>
-            <li>Blackberry - ₹80</li>
-            <li>Blue Curacao - ₹80</li>
-            <li>Mint - ₹60</li>
-            <li>Passion Fruit - ₹80</li>
-            <li>Green Apple Virgin - ₹80</li>
-            <li>Orange - ₹70</li>
-            <li>Spicy Orange - ₹75</li>
-            <li>Spicy Mango - ₹75</li>
+            <li>
+              <span class="item-title">Strawberry</span>
+              <span class="item-price">₹70</span>
+              <span class="item-desc">Mint, lime, and fresh strawberries muddled over ice and soda.</span>
+            </li>
+            <li>
+              <span class="item-title">Watermelon</span>
+              <span class="item-price">₹70</span>
+              <span class="item-desc">A cooling watermelon mojito with mint and lime.</span>
+            </li>
+            <li>
+              <span class="item-title">Blueberry</span>
+              <span class="item-price">₹80</span>
+              <span class="item-desc">Blueberries, mint, and lime for a fruity, fizzy mojito.</span>
+            </li>
+            <li>
+              <span class="item-title">Blackberry</span>
+              <span class="item-price">₹80</span>
+              <span class="item-desc">Rich blackberries with mint and lime—flavorful and refreshing.</span>
+            </li>
+            <li>
+              <span class="item-title">Blue Curacao</span>
+              <span class="item-price">₹80</span>
+              <span class="item-desc">A vibrant blue mojito with mint, lime, and blue curacao syrup.</span>
+            </li>
+            <li>
+              <span class="item-title">Mint</span>
+              <span class="item-price">₹60</span>
+              <span class="item-desc">Classic mojito with fresh mint and lime, sparkling with soda.</span>
+            </li>
+            <li>
+              <span class="item-title">Passion Fruit</span>
+              <span class="item-price">₹80</span>
+              <span class="item-desc">Tropical passion fruit mojito with mint and lime.</span>
+            </li>
+            <li>
+              <span class="item-title">Green Apple Virgin</span>
+              <span class="item-price">₹80</span>
+              <span class="item-desc">Green apple syrup, mint, and lime for a tangy virgin mojito.</span>
+            </li>
+            <li>
+              <span class="item-title">Orange</span>
+              <span class="item-price">₹70</span>
+              <span class="item-desc">Fresh orange juice with mint, lime, and soda—citrusy and refreshing.</span>
+            </li>
+            <li>
+              <span class="item-title">Spicy Orange</span>
+              <span class="item-price">₹75</span>
+              <span class="item-desc">Orange mojito with a hint of spice, mint, and lime.</span>
+            </li>
+            <li>
+              <span class="item-title">Spicy Mango</span>
+              <span class="item-price">₹75</span>
+              <span class="item-desc">Mango mojito with a spicy twist, mint, and lime.</span>
+            </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="menu-section">
+       <!--  <div class="menu-section">
           <h2>Soda</h2>
           <ul class="list-unstyled">
-            <li>Lemon Soda - ₹30</li>
-            <li>Mint Lime Soda - ₹40</li>
-            <li>Grape Soda - ₹40</li>
-            <li>Pineapple Lime Soda - ₹40</li>
-            <li>Chilly Soda - ₹30</li>
-            <li>Orange Soda - ₹40</li>
+            <li>
+              <span class="item-title">Lemon Soda</span>
+              <span class="item-price">₹30</span>
+              <span class="item-desc">Classic lemon soda—sweet, salty, or spicy your way.</span>
+            </li>
+            <li>
+              <span class="item-title">Mint Lime Soda</span>
+              <span class="item-price">₹40</span>
+              <span class="item-desc">Lime soda with a fresh minty burst.</span>
+            </li>
+            <li>
+              <span class="item-title">Grape Soda</span>
+              <span class="item-price">₹40</span>
+              <span class="item-desc">Fizzy soda flavored with juicy grape syrup.</span>
+            </li>
+            <li>
+              <span class="item-title">Pineapple Lime Soda</span>
+              <span class="item-price">₹40</span>
+              <span class="item-desc">Tropical pineapple and lime with soda for a tangy fizz.</span>
+            </li>
+            <li>
+              <span class="item-title">Chilly Soda</span>
+              <span class="item-price">₹30</span>
+              <span class="item-desc">Spicy chilly mix with soda and lime for a bold taste.</span>
+            </li>
+            <li>
+              <span class="item-title">Orange Soda</span>
+              <span class="item-price">₹40</span>
+              <span class="item-desc">Refreshing orange-flavored soda, sweet and tangy.</span>
+            </li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="menu-section">
+        <!-- <div class="menu-section">
           <h2>Falooda</h2>
           <ul class="list-unstyled">
-            <li>Normal - ₹100</li>
-            <li>Royal - ₹120</li>
-            <li>Nuts - ₹130</li>
-            <li>Mango - ₹110</li>
+            <li>
+              <span class="item-title">Normal</span>
+              <span class="item-price">₹100</span>
+              <span class="item-desc">Traditional falooda with vermicelli, sabja seeds, and rose syrup.</span>
+            </li>
+            <li>
+              <span class="item-title">Royal</span>
+              <span class="item-price">₹120</span>
+              <span class="item-desc">Royal falooda topped with dry fruits and ice cream.</span>
+            </li>
+            <li>
+              <span class="item-title">Nuts</span>
+              <span class="item-price">₹130</span>
+              <span class="item-desc">A rich falooda loaded with a variety of crunchy nuts.</span>
+            </li>
+            <li>
+              <span class="item-title">Mango</span>
+              <span class="item-price">₹110</span>
+              <span class="item-desc">Falooda with fresh mango puree and mango chunks.</span>
+            </li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
